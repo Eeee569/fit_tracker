@@ -1,0 +1,5 @@
+# ninja log v5
+0	154	1663455806279046884	CMakeFiles/fit_tracker.dir/main.cpp.o	dbe6df99f99c960b
+155	185	1663455806307047260	fit_tracker	ef04f778ebbfbeb6
+0	162	1663456212144425108	CMakeFiles/fit_tracker.dir/src/server/server.cpp.o	e30245c12a9664f8
+162	193	1663456212176425528	fit_tracker	b0de8492f0ef1289

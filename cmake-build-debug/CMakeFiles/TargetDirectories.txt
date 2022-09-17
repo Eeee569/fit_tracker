@@ -1,3 +1,4 @@
 /home/will/Documents/fitproj/fit_tracker/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/will/Documents/fitproj/fit_tracker/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/will/Documents/fitproj/fit_tracker/cmake-build-debug/CMakeFiles/fit_tracker.dir
+/home/will/Documents/fitproj/fit_tracker/cmake-build-debug/CMakeFiles/yourProj.dir
