@@ -9,13 +9,17 @@ if(DEFINED ENV{BUILD_TYPE})
 
     if("$ENV{BUILD_TYPE}" STREQUAL "server")
 
-        file(GLOB db
-                src/db/*.h
-                src/db/*.cpp
-                )
-        add_executable(yourProj ${db})
 
-        add_executable(fit_tracker src/server/server.cpp)
+        execute_process(COMMAND ${Python_EXECUTABLE} -m pip install -r ${_pypkg})
+
+
+        #        file(GLOB db
+#                src/db/*.h
+#                src/db/*.cpp
+#                )
+#        add_executable(yourProj ${db})
+#
+#        add_executable(fit_tracker src/server/server.cpp)
 
     else()
 
