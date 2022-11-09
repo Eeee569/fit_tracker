@@ -3,7 +3,7 @@ from typing import Union
 from pydantic import BaseModel
 
 class Item(BaseModel):
-    ouput_list : list
+    output_list : list
 
 
 app = FastAPI()
@@ -20,6 +20,6 @@ def test_as_bytes(imt_list):
 @app.post("/items/")
 async def get_items(item: Item):
 
-    test_as_bytes(item.ouput_list)
+    test_as_bytes(item.output_list)
 
     return {"status": 'ya'}
