@@ -14,7 +14,7 @@ for i in channel:
 
 
 def send_output(output):
-    r = requests.post('10.2.242.249', json={"ouput_list": output})
+    r = requests.post('10.2.242.249:8000', json={"ouput_list": output})
     print(r.status_code)
 
 

@@ -1,6 +1,6 @@
 # ide
 .idea
-
+venv
 
 #private
 keys.yaml

@@ -42,17 +42,6 @@ include CMakeFiles/rules.ninja
 cmake_ninja_workdir = /home/will/Documents/fitproj/fit_tracker/cmake-build-debug/
 
 #############################################
-# Utility command for edit_cache
-
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/will/Documents/fitproj/fit_tracker/cmake-build-debug && /home/will/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build edit_cache: phony CMakeFiles/edit_cache.util
-
-
-#############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
@@ -63,67 +52,16 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
-# =============================================================================
-# Object build statements for EXECUTABLE target fit_tracker
-
 
 #############################################
-# Order-only phony target for fit_tracker
+# Utility command for edit_cache
 
-build cmake_object_order_depends_target_fit_tracker: phony || CMakeFiles/fit_tracker.dir
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/will/Documents/fitproj/fit_tracker/cmake-build-debug && /home/will/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
 
-build CMakeFiles/fit_tracker.dir/src/server/server.cpp.o: CXX_COMPILER__fit_tracker_Debug /home/will/Documents/fitproj/fit_tracker/src/server/server.cpp || cmake_object_order_depends_target_fit_tracker
-  DEP_FILE = CMakeFiles/fit_tracker.dir/src/server/server.cpp.o.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles/fit_tracker.dir
-  OBJECT_FILE_DIR = CMakeFiles/fit_tracker.dir/src/server
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target fit_tracker
-
-
-#############################################
-# Link the executable fit_tracker
-
-build fit_tracker: CXX_EXECUTABLE_LINKER__fit_tracker_Debug CMakeFiles/fit_tracker.dir/src/server/server.cpp.o
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/fit_tracker.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = fit_tracker
-  TARGET_PDB = fit_tracker.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target yourProj
-
-
-#############################################
-# Order-only phony target for yourProj
-
-build cmake_object_order_depends_target_yourProj: phony || CMakeFiles/yourProj.dir
-
-build CMakeFiles/yourProj.dir/src/db/db.cpp.o: CXX_COMPILER__yourProj_Debug /home/will/Documents/fitproj/fit_tracker/src/db/db.cpp || cmake_object_order_depends_target_yourProj
-  DEP_FILE = CMakeFiles/yourProj.dir/src/db/db.cpp.o.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles/yourProj.dir
-  OBJECT_FILE_DIR = CMakeFiles/yourProj.dir/src/db
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target yourProj
-
-
-#############################################
-# Link the executable yourProj
-
-build yourProj: CXX_EXECUTABLE_LINKER__yourProj_Debug CMakeFiles/yourProj.dir/src/db/db.cpp.o
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/yourProj.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = yourProj
-  TARGET_PDB = yourProj.dbg
+build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
 # Target aliases.
@@ -136,7 +74,7 @@ build yourProj: CXX_EXECUTABLE_LINKER__yourProj_Debug CMakeFiles/yourProj.dir/sr
 #############################################
 # Folder: /home/will/Documents/fitproj/fit_tracker/cmake-build-debug
 
-build all: phony fit_tracker yourProj
+build all: phony
 
 # =============================================================================
 # Built-in targets
