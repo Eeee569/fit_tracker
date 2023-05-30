@@ -29,6 +29,8 @@ async def run_scale_listener():
                 "scaleData",
                 {"impedance": impedance, "weight": weight, "date": int(time.time())},
             )
+
+            past_scale_tuple = scale_tuple
         except Exception as e:
             database.report_error(Settings.device, str(e))
 

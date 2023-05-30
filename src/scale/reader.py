@@ -36,7 +36,6 @@ class ScaleReader:
         return self.data_tuple
 async def test_func():
     """Scan for devices."""
-    print("test")
     reader = ScaleReader()
     scanner = BleakScanner()
     scanner.register_detection_callback(reader.device_found)
