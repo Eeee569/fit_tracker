@@ -1,7 +1,7 @@
 import sys
 import asyncio
 from src.scale.scale import run_scale_listener
-from src.server.loseit import run_losit_listener
+# from src.server.loseit import run_losit_listener
 import logging
 logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
 
