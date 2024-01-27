@@ -4,7 +4,7 @@ class Settings:
     proj_root: str = "/home/will/Documents/fitproj/fit_tracker"
     scale_address: str = "D0:3E:7D:0F:48:52"
     metrics_uuid: str = "0000181b-0000-1000-8000-00805f9b34fb"
-    db_path: str = "mongodb://default:default1234@10.2.242.230:27017/fitdb"
+    db_path: str = "mongodb://localhost:6565/fitdb"
     weight_interval: int = 10
     impedance_interval: int = 50
     device: str = "SCALE LISTENER"
