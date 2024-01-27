@@ -1,0 +1,59 @@
+version: '3'
+services:
+
+#  app:
+#    build:
+#      context: ./images/app/
+#      dockerfile: Dockerfile
+#    depends_on:
+#      - mongo
+#      - rabbitmq
+#      - celery-worker
+#      - celery-beat
+#    environment:
+#      DEBIAN_FRONTEND: noninteractive
+#      USE_ONLY_LOCAL_ENV: "false"
+#      TZ: America/New_York
+#      DOCKER_NAME: app
+#    env_file:
+#      - .env
+#
+#  notion:
+#    build:
+#      context: ./images/notion/
+#      dockerfile: Dockerfile
+#    env_file:
+#      - .env
+#    depends_on:
+#      - api
+#      - app
+
+
+
+  mongo:
+    image: mongo:6-jammy
+    container_name: app_mongo
+    restart: always
+    environment:
+      MONGO_INITDB_DATABASE: local
+    env_file:
+      - .env
+    ports:
+      - "6565:27017"
+    volumes:
+      - ./apps/mongo/data:/data/db
+      - ./apps/mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+
+
+
+volumes:
+  mongodb:
+  rabbitmq:
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.27.0.0/16

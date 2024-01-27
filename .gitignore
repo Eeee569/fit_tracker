@@ -1,0 +1,15 @@
+/target
+
+#db
+/apps/mongo/data
+
+# ide
+.idea
+venv
+
+#private
+keys.yaml
+token.json
+fitbit_token.json
+*.apps.googleusercontent.com.json
+.env
