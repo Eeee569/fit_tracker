@@ -6,10 +6,13 @@
 # ide
 .idea
 venv
+*.pyc
 
 #private
 keys.yaml
 token.json
 fitbit_token.json
 *.apps.googleusercontent.com.json
+example.log
 .env
+
