@@ -7,6 +7,7 @@ class Settings:
     db_path: str = "mongodb://localhost:6565/fitdb"
     weight_interval: int = 10
     impedance_interval: int = 50
+    first_db_value_fill: tuple[int,int] = (444, 205)
     device: str = "SCALE LISTENER"
     time_interval: int = 60
     email: str = "donotreply@loseit.com"
